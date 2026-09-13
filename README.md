@@ -1,6 +1,6 @@
 # IT Infrastructure & DevOps Trainee Practical Implementation
 
-## 1. Project Overview
+ 1. Project Overview
 
 This project implements a small production-style IT infrastructure environment on Ubuntu Server using Docker, Docker Compose, Nginx, PostgreSQL, Bash automation, cron, Prometheus, and Node Exporter.
 
@@ -24,27 +24,26 @@ The implementation covers:
 
 ```text
                          Client / Browser
-                                |
+                                
                                 | HTTP :80
                                 v
-                       +------------------+
-                       |      Nginx       |
-                       | Reverse Proxy    |
-                       +--------+---------+
+                       
+                             Nginx       
+                        Reverse Proxy    
+                       
                                 |
                                 | HTTP :5000
                                 v
-                       +------------------+
-                       | Flask Backend    |
-                       | test-backend     |
-                       +--------+---------+
+                    
+                        Flask Backend    
+                        test-backend     
+                       
                                 |
                                 | PostgreSQL :5432
                                 v
-                       +------------------+
-                       |   PostgreSQL     |
-                       |    test-db       |
-                       +------------------+
+                       
+                          PostgreSQL     
+                           test-db       
                                 |
                                 v
                        Persistent Volume
@@ -53,24 +52,22 @@ The implementation covers:
 
           Monitoring
               |
-              +--------------------+
+              ----------------------
               |                    |
               v                    v
-       +-------------+      +-------------+
-       | Node Exporter| ---> | Prometheus  |
-       |    :9100     |      |    :9090    |
-       +-------------+      +-------------+
+            
+        Node Exporter| --->  Prometheus  
+           :9100               :9090    
+          
 ```
 
 All application and monitoring containers communicate through the Docker bridge network:
 
-```text
+
 it-infrastructure-devops_devops-net
 ```
 
----
-
-## 3. Technology Stack
+ 3. Technology Stack
 
 | Component        | Technology              |
 | ---------------- | ----------------------- |
@@ -87,9 +84,7 @@ it-infrastructure-devops_devops-net
 | Version Control  | Git                     |
 | Repository       | GitHub                  |
 
----
-
-## 4. Project Structure
+ 4. Project Structure
 
 ```text
 it-infrastructure-devops/
@@ -115,7 +110,7 @@ The `.env` file contains database credentials and is intentionally excluded from
 
 ## 5. Server Configuration
 
-### Server
+Server
 
 * Hostname: `devops-server`
 * Operating System: Ubuntu Server 24.04 LTS
@@ -174,7 +169,7 @@ Example:
 ```env
 POSTGRES_DB=devopsdb
 POSTGRES_USER=devops
-POSTGRES_PASSWORD=devopspass
+POSTGRES_PASSWORD=devops****
 ```
 
 The `.env` file is excluded from Git:
@@ -667,7 +662,7 @@ git status
 The infrastructure can be started with:
 
 ```bash
-git clone <repository-url>
+git clone <repo-url>
 cd it-infrastructure-devops
 ```
 
@@ -682,7 +677,7 @@ Add:
 ```env
 POSTGRES_DB=devopsdb
 POSTGRES_USER=devops
-POSTGRES_PASSWORD=your-secure-password
+POSTGRES_PASSWORD=secure-password
 ```
 
 Then deploy:
@@ -744,61 +739,60 @@ docker compose restart
 ```
 
 ### Rebuild containers
-
-```bash
 docker compose up -d --build
-```
-
----
 
 ## 21. Evidence / Screenshots
 
 The following screenshots should be included with the practical assignment:
 
 1. Ubuntu server and hostname
-2. SSH connection using port `2222`
-3. UFW status showing allowed ports
-4. `docker compose ps` showing running services
-5. Application accessed through Nginx
-6. Backend `/health` response
-7. Docker network inspection
-8. Persistent PostgreSQL volume
-9. Successful infrastructure health check
-10. Cron configuration / execution evidence
-11. Successful database backup
-12. Backup file showing `.sql.gz`
-13. Database restore verification
-14. Prometheus target showing Node Exporter as `up`
-15. Git log showing feature branches and meaningful commits
-16. GitHub repository
+   <img width="440" height="279" alt="image" src="https://github.com/user-attachments/assets/e7522644-8544-41fc-a9aa-5d2fec9f438c" />
+
+
+
+3. SSH connection using port `2222`
+4. UFW status showing allowed ports
+5. `docker compose ps` showing running services
+6. Application accessed through Nginx
+7. Backend `/health` response
+8. Docker network inspection
+9. Persistent PostgreSQL volume
+10. Successful infrastructure health check
+11. Cron configuration / execution evidence
+12. Successful database backup
+13. Backup file showing `.sql.gz`
+14. Database restore verification
+15. Prometheus target showing Node Exporter as `up`
+16. Git log showing feature branches and meaningful commits
+17. GitHub repository
 
 ---
 
 ## 22. Project Status
 
-| Requirement                 | Status      |
-| --------------------------- | ----------- |
-| Ubuntu Server               | Complete    |
-| Dedicated user              | Complete    |
-| SSH key authentication      | Complete    |
-| SSH port 2222               | Complete    |
-| Root SSH disabled           | Complete    |
-| Docker Compose              | Complete    |
-| Nginx reverse proxy         | Complete    |
-| Flask backend               | Complete    |
-| PostgreSQL                  | Complete    |
-| Persistent volume           | Complete    |
-| Infrastructure health check | Complete    |
-| Health-check cron           | Complete    |
-| Database backup             | Complete    |
-| Backup cron                 | Complete    |
-| Restore testing             | Complete    |
-| Prometheus                  | Complete    |
-| Node Exporter               | Complete    |
-| Git feature branches        | Complete    |
-| GitHub repository           | Complete    |
-| README documentation        | In progress |
-| Verification screenshots    | Pending     |
+| Requirement                 | Status      
+
+| Ubuntu Server               | Complete    
+| Dedicated user              | Complete    
+| SSH key authentication      | Complete    
+| SSH port 2222               | Complete    
+| Root SSH disabled           | Complete    
+| Docker Compose              | Complete    
+| Nginx reverse proxy         | Complete    
+| Flask backend               | Complete    
+| PostgreSQL                  | Complete    
+| Persistent volume           | Complete    
+| Infrastructure health check | Complete    
+| Health-check cron           | Complete    
+| Database backup             | Complete    
+| Backup cron                 | Complete    
+| Restore testing             | Complete    
+| Prometheus                  | Complete    
+| Node Exporter               | Complete    
+| Git feature branches        | Complete    
+| GitHub repository           | Complete    
+| README documentation        | complete     
+| Verification screenshots    | complete     
 
 ---
 
