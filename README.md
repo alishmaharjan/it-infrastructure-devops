@@ -748,6 +748,7 @@ The following screenshots should be included with the practical assignment:
 1. Ubuntu server and hostname
 
    <img width="440" height="279" alt="image" src="https://github.com/user-attachments/assets/e7522644-8544-41fc-a9aa-5d2fec9f438c" />
+   
 
 
 
@@ -756,10 +757,12 @@ The following screenshots should be included with the practical assignment:
 <img width="897" height="93" alt="image" src="https://github.com/user-attachments/assets/c9cf89c2-02a9-4e48-80d6-06ce9678efce" />
 
 
+
    
 3. UFW status showing allowed ports
 
 <img width="549" height="197" alt="image" src="https://github.com/user-attachments/assets/f8904ca2-450e-4fd1-b915-3fd85e98d7ee" />
+
 
    
 4. `docker compose ps` showing running services
@@ -775,22 +778,29 @@ The following screenshots should be included with the practical assignment:
 6. Backend `/health` response
 
 <img width="666" height="161" alt="image" src="https://github.com/user-attachments/assets/e8b82a29-b27b-41f0-aee2-d0959b86700d" />
+
+
  
 7. Docker network inspection
 
 <img width="594" height="162" alt="image" src="https://github.com/user-attachments/assets/7a1dae69-68d5-4166-a67e-cb8cef9adc8a" />
 
 
+
 8. Cron configuration / execution evidence
 
 <img width="761" height="70" alt="image" src="https://github.com/user-attachments/assets/03e707a3-9432-4538-b910-21948025debc" />
+
 
     
 9. Successful database backup
 
 <img width="625" height="95" alt="image" src="https://github.com/user-attachments/assets/98637130-8fb2-42b0-ae3d-a673db2e5cd5" />
 
+
 10. Git log showing feature branches and meaningful commits
+
+<img width="699" height="487" alt="image" src="https://github.com/user-attachments/assets/2129886b-c4b5-4d10-9f19-4b3f9595c84a" />
 
 
 ---
