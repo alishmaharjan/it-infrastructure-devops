@@ -6,3 +6,4 @@ backups/
 *.sql
 *.sql.gz
 
+health/health_status.txt
