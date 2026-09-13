@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15">
+
+    <title>Infrastructure Health Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Infrastructure Health Dashboard</h1>
+
+        <p class="refresh">
+            Automatically refreshed every 15 seconds
+        </p>
+
+        <div class="dashboard">
+
+            <div class="metric">
+                <h3>CPU Usage</h3>
+                <p>{{ cpu }}%</p>
+            </div>
+
+            <div class="metric">
+                <h3>RAM Usage</h3>
+                <p>{{ ram }}%</p>
+            </div>
+
+            <div class="metric">
+                <h3>Root Disk Usage</h3>
+                <p>{{ disk }}%</p>
+            </div>
+
+            <div class="metric">
+                <h3>Docker Service</h3>
+                <p>{{ docker }}</p>
+            </div>
+
+            <div class="metric">
+                <h3>Backend Container</h3>
+                <p>{{ backend }}</p>
+            </div>
+
+            <div class="metric">
+                <h3>Overall Status</h3>
+                <p>{{ overall_status }}</p>
+            </div>
+
+        </div>
+
+        <div class="links">
+            <a href="/">Back to Application</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

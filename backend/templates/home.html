@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Infrastructure DevOps</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>IT Infrastructure DevOps</h1>
+
+        <div class="card">
+            <p><strong>Backend:</strong> Flask</p>
+            <p><strong>Database:</strong> PostgreSQL</p>
+            <p>
+                <strong>Database Status:</strong>
+                <span class="status">{{ db_status }}</span>
+            </p>
+            <p><strong>Reverse Proxy:</strong> Nginx</p>
+        </div>
+
+        <div class="links">
+            <a href="/dashboard">View Infrastructure Health Dashboard</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
