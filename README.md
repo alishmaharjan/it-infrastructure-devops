@@ -803,9 +803,9 @@ The following screenshots should be included with the practical assignment:
 <img width="699" height="487" alt="image" src="https://github.com/user-attachments/assets/2129886b-c4b5-4d10-9f19-4b3f9595c84a" />
 
 
----
 
-## 22. Project Status
+
+22. Project Status
 
 | Requirement                 | Status      
 
@@ -831,9 +831,7 @@ The following screenshots should be included with the practical assignment:
 | README documentation        | complete     
 | Verification screenshots    | complete     
 
----
-
-## 23. Author
+Author
 Alish Maharjan
 
 Repository:`it-infrastructure-devops`
